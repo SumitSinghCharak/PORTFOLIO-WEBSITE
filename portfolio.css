@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    display: flex; /* Flexbox for navigation */
+    justify-content: center; /* Center items horizontally */
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for nav items */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto; /* Center the section */
+    max-width: 1200px; /* Limit max width for large screens */
+    display: grid; /* Grid layout for sections */
+    gap: 1rem; /* Space between grid items */
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+form {
+    margin-top: 1rem;
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+form label {
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically on smaller screens */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Adjust spacing for vertical stack */
+    }
+
+    section {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+}
